@@ -16,7 +16,7 @@ public class StaffInfo {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		Staff yamada = new Staff();
-		yamada.name = "Kazuhito Nakayama!!!I'm college student";
+		yamada.name = "Kazuhito Nakayama!!!I'm college student,majoring LAW";
 
 		System.out.println(yamada.name);
 		/*
