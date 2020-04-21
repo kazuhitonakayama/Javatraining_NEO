@@ -13,6 +13,15 @@ public class StaffInfo {
 		yamada.name = "Kazuhito Nakayama";
 		
 		System.out.println(yamada.name);
+		/*
+		 * フィールドはデータを格納
+		 * メソッドは処理の定義
+		 * 
+		 * publicはアクセス修飾子
+		 * 
+		 * クラスはたい焼きのかた
+		 * インスタンスはたい焼き
+		 */
 	}
 
 }
