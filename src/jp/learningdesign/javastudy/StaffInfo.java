@@ -10,6 +10,11 @@ class Staff {
 	String name;
 	int staffid;
 	String email;
+	
+	public void sayhello() {
+		System.out.println("Hello " + this.name);
+		//親のStaffクラスのnameというフィールドを参照する、という意味
+	}
 }
 public class StaffInfo {
 
@@ -17,8 +22,10 @@ public class StaffInfo {
 		// TODO 自動生成されたメソッド・スタブ
 		Staff yamada = new Staff();
 		yamada.name = "Kazuhito Nakayama!!!I'm college student,majoring LAW";
-
-		System.out.println(yamada.name);
+		
+		yamada.sayhello();
+		// System.out.println(yamada.name);
+		
 		/*
 		 * フィールドはデータを格納
 		 * メソッドは処理の定義
