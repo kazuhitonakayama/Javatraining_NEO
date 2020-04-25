@@ -54,6 +54,13 @@ public class StaffInfo {
 		 *
 		 * クラスはたい焼きのかた
 		 * インスタンスはたい焼き
+		 * 
+		 * double height = 1.8
+		 * height
+		 * という変数に1.8のリテラルを代入
+		 * 
+		 * 
+		 * 
 		 */
 	}
 
