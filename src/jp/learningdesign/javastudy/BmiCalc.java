@@ -12,10 +12,20 @@ public class BmiCalc {
 		double weight,height,bmi;
 		
 		weight = 85;
-		height = 1.8;
+		height = 180;
+		
+		height /= 100;
+		
 		bmi = weight/(height*height);
 		
 		System.out.println(bmi);
+		
+		/*
+		 * 代入演算子
+		 * 左右は同じ結果
+		 * x += Y, = , x = x + y
+		 * 
+		 */
 	}
 
 }
