@@ -20,6 +20,13 @@ public class BmiCalc {
 		
 		System.out.println(bmi);
 		
+		if (bmi < 18) {
+			System.out.println("痩せ型");
+		} else if (bmi < 24) {
+			System.out.println("普通");
+		} else {
+			System.out.println("肥満");
+		}
 		/*
 		 * 代入演算子
 		 * 左右は同じ結果
