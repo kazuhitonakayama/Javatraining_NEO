@@ -7,6 +7,30 @@ package jp.learningdesign.javastudy;
  */
 
 class Staff {
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getStaffid() {
+		return staffid;
+	}
+
+	public void setStaffid(int staffid) {
+		this.staffid = staffid;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public Staff(String name, int staffid, String email) {
 		super();
 		this.name = name;
@@ -31,8 +55,15 @@ public class StaffInfo {
 		Staff yamada = new Staff("Kazuhito Nakayama",12345,"firstjin19990101@gmail.com");
 		// yamada.name = "Kazuhito Nakayama!!!I'm college student,majoring LAW";
 		
-		yamada.sayhello();
+		// yamada.sayhello();
 		// System.out.println(yamada.name);
+		System.out.println("[社員情報]");
+		System.out.println("氏名: " + yamada.getName());
+		System.out.println("社員番号: " + yamada.getStaffid());
+		System.out.println("Email: " + yamada.getEmail());
+		
+		
+		
 		
 		/*
 		 * フィールドはデータを格納
