@@ -47,12 +47,21 @@ class Staff {
 		//親のStaffクラスのnameというフィールドを参照する、という意味
 	}
 }
-
+class RemoteStaff extends Staff {
+	public String location;
+	public RemoteStaff(String name, int staffid, String email) {
+		super(name, staffid, email);
+		// 継承する元のクラスのコンストラクター
+	}
+	
+}
 public class StaffInfo {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		Staff yamada = new Staff("Kazuhito Nakayama",12345,"firstjin19990101@gmail.com");
+		RemoteStaff tanaka = new RemoteStaff("Hanako", 54321, "hanako@gmail.com");
+		tanaka.location = "大阪";
 		// yamada.name = "Kazuhito Nakayama!!!I'm college student,majoring LAW";
 		
 		// yamada.sayhello();
@@ -62,6 +71,11 @@ public class StaffInfo {
 		System.out.println("社員番号: " + yamada.getStaffid());
 		System.out.println("Email: " + yamada.getEmail());
 		
+		System.out.println("[社員情報]");
+		System.out.println("氏名: " + tanaka.getName());
+		System.out.println("社員番号: " + tanaka.getStaffid());
+		System.out.println("Email: " + tanaka.getEmail());
+		System.out.println("勤務地: " + tanaka.location);
 		
 		
 		
