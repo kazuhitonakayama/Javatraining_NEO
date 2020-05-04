@@ -7,21 +7,29 @@ package jp.learningdesign.javastudy;
  */
 
 class Staff {
+	public Staff(String name, int staffid, String email) {
+		super();
+		this.name = name;
+		this.staffid = staffid;
+		this.email = email;
+	}
+
 	String name;
 	int staffid;
 	String email;
 	
 	public void sayhello() {
-		System.out.println("Hello " + this.name);
+		System.out.println("Hello " + this.name + "\nYour ID is " + this.staffid + "\nAnd your email is " + this.email);
 		//親のStaffクラスのnameというフィールドを参照する、という意味
 	}
 }
+
 public class StaffInfo {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		Staff yamada = new Staff();
-		yamada.name = "Kazuhito Nakayama!!!I'm college student,majoring LAW";
+		Staff yamada = new Staff("Kazuhito Nakayama",12345,"firstjin19990101@gmail.com");
+		// yamada.name = "Kazuhito Nakayama!!!I'm college student,majoring LAW";
 		
 		yamada.sayhello();
 		// System.out.println(yamada.name);
